@@ -13,7 +13,7 @@ jobs:
         run: |
           echo "Build Web App"
           sleep 10s
-      - uses: Eli2694-Playground/backend@Latest
+      - uses: Eli2694-Playground/backend@v1.0.0
         with:
           owner: Eli2694
           repo: backend
