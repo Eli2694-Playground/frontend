@@ -15,5 +15,5 @@ jobs:
 
   test:
     needs: build
-    uses: Eli2694-Playground/backend/.github/workflows/demo_run_api.yml@main
+    uses: Eli2694/Eli2694-Playground/backend/.github/workflows/demo_run_api.yml@main
         
