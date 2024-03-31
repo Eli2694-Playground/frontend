@@ -14,5 +14,5 @@ jobs:
           
   test: 
     name: Test
-    uses: Eli2694-Playground/backend/.github/workflows/testInvocation.yml@main
+    uses: Eli2694-Playground/backend/.github/workflows/test2.yml@main
      
