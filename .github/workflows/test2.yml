@@ -13,6 +13,7 @@ jobs:
           sleep 10s
           
   test: 
+    needs: build
     name: Test
     uses: Eli2694-Playground/backend/.github/workflows/test2.yml@main
      
