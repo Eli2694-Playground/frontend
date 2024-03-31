@@ -12,5 +12,7 @@ jobs:
         run: |
           echo "Build Web App"
           sleep 10s  # Simulates a build process (replace with actual build commands)
-      - name: Test  # Needs the previous build job to finish
-        uses: Eli2694-Playground/backend/.github/workflows/test2.yml@main
+
+  test:        
+      uses: Eli2694-Playground/backend/.github/workflows/test2.yml@main
+        
