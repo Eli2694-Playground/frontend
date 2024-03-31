@@ -13,7 +13,7 @@ jobs:
         run: |
           echo "Build Web App"
           sleep 10s
-      - uses: Eli2694/backend@v1.0.0
+      - uses: convictional/trigger-workflow-and-wait@v1.6.5
         with:
           owner: Eli2694
           repo: backend
