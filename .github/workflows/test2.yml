@@ -1,0 +1,20 @@
+name: test2
+on:
+  workflow_dispatch:
+ 
+jobs:
+  build:
+    name: Run Web App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Web App
+        run: |
+          echo "Build Web App"
+          sleep 10s
+          
+  test: 
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Eli2694-Playground/backend/.github/workflows/testInvocation.yml@main
+     
