@@ -13,10 +13,10 @@ jobs:
         run: |
           echo "Build Web App"
           sleep 10s
-      - uses: convictional/trigger-workflow-and-wait@v1.6.1
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
           owner: Eli2694
-          repo: Eli2694-Playground/backend
+          repo: backend
           github_token: ${{ secrets.G_ACCESS_TOKEN }}
           workflow_file_name: testInvocation.yml
           ref: main
