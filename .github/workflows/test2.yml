@@ -1,7 +1,8 @@
 name: test2
+
 on:
-  workflow_dispatch:
- 
+  workflow_dispatch:  # Triggered manually via dispatch event
+
 jobs:
   build:
     name: Run Web App
@@ -10,10 +11,6 @@ jobs:
       - name: Build Web App
         run: |
           echo "Build Web App"
-          sleep 10s
-          
-  test: 
-    needs: build
-    name: Test
-    uses: Eli2694-Playground/backend/.github/workflows/test2.yml@main
-     
+          sleep 10s  # Simulates a build process (replace with actual build commands)
+      - name: Test  # Needs the previous build job to finish
+        uses: Eli2694-Playground/backend/.github/workflows/test2.yml@main
